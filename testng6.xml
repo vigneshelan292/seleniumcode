@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Testsuite" parallel="tests" thread-count="2">
+
+  <test name="dependsongroups" parallel="tests" thread-count="1">
+  <classes>
+  <class name="testng.dependsongroups">
+  <methods>
+  <exclude name="skipped"></exclude>
+  </methods>
+  
+  
+  </class>
+  
+  </classes>
+    
+  
+  </test>
+</suite> <!-- Suite -->
