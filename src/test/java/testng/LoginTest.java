@@ -5,11 +5,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import Basetest.base;
+import screeenshotforfailed.retry;
 
 public class LoginTest extends base {
    
 
-    @Test
+    @Test(retryAnalyzer=retry.class)
     public void testGoogle() {
         driver = new ChromeDriver();
         driver.get("https://www.google.com");

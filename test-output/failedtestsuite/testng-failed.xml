@@ -8,8 +8,8 @@
     <classes>
       <class name="testng.LoginTest">
         <methods>
-          <include name="tearDown"/>
           <include name="testGoogle"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- testng.LoginTest -->

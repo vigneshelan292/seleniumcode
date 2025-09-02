@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results retried="1" ignored="0" total="3" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-01T15:41:30 IST" name="failedtestsuite" finished-at="2025-09-01T15:41:43 IST" duration-ms="13641">
+  <suite started-at="2025-09-02T13:08:21 IST" name="failedtestsuite" finished-at="2025-09-02T13:08:56 IST" duration-ms="34553">
     <groups>
     </groups>
-    <test started-at="2025-09-01T15:41:30 IST" name="MyTests" finished-at="2025-09-01T15:41:43 IST" duration-ms="13641">
+    <test started-at="2025-09-02T13:08:21 IST" name="MyTests" finished-at="2025-09-02T13:08:56 IST" duration-ms="34553">
       <class name="testng.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testng.LoginTest@5bf0d49]" started-at="2025-09-01T15:41:30 IST" name="setUp" finished-at="2025-09-01T15:41:33 IST" duration-ms="2798" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testng.LoginTest@5b7a5baa]" started-at="2025-09-02T13:08:22 IST" name="setUp" finished-at="2025-09-02T13:08:28 IST" duration-ms="5839" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testGoogle()[pri:0, instance:testng.LoginTest@5bf0d49]" started-at="2025-09-01T15:41:33 IST" name="testGoogle" finished-at="2025-09-01T15:41:41 IST" duration-ms="8678" status="FAIL">
+        <test-method signature="passtest()[pri:0, instance:testng.LoginTest@5b7a5baa]" started-at="2025-09-02T13:08:28 IST" name="passtest" finished-at="2025-09-02T13:08:30 IST" duration-ms="1813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passtest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testng.LoginTest@5b7a5baa]" started-at="2025-09-02T13:08:30 IST" name="tearDown" finished-at="2025-09-02T13:08:31 IST" duration-ms="611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testng.LoginTest@5b7a5baa]" started-at="2025-09-02T13:08:31 IST" name="setUp" finished-at="2025-09-02T13:08:33 IST" duration-ms="1921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="testGoogle()[pri:0, instance:testng.LoginTest@5b7a5baa]" started-at="2025-09-02T13:08:33 IST" name="testGoogle" finished-at="2025-09-02T13:08:41 IST" duration-ms="7781" status="SKIP">
           <exception class="java.lang.AssertionError">
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError
-at testng.LoginTest.testGoogle(LoginTest.java:16)
+at testng.LoginTest.testGoogle(LoginTest.java:17)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -48,7 +60,52 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGoogle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testng.LoginTest@5bf0d49]" started-at="2025-09-01T15:41:42 IST" name="tearDown" finished-at="2025-09-01T15:41:43 IST" duration-ms="766" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testng.LoginTest@5b7a5baa]" started-at="2025-09-02T13:08:41 IST" name="tearDown" finished-at="2025-09-02T13:08:41 IST" duration-ms="573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testng.LoginTest@5b7a5baa]" started-at="2025-09-02T13:08:41 IST" name="setUp" finished-at="2025-09-02T13:08:43 IST" duration-ms="1885" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGoogle()[pri:0, instance:testng.LoginTest@5b7a5baa]" started-at="2025-09-02T13:08:43 IST" name="testGoogle" finished-at="2025-09-02T13:08:55 IST" duration-ms="11335" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at testng.LoginTest.testGoogle(LoginTest.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoogle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testng.LoginTest@5b7a5baa]" started-at="2025-09-02T13:08:55 IST" name="tearDown" finished-at="2025-09-02T13:08:56 IST" duration-ms="377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
